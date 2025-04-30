@@ -22,13 +22,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed  w-full z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white shadow-md py-2 text-gray-700'
           : `bg-transparent py-4 ${isCourseRoute ? 'text-gray-700' : 'text-white'}`
       }`}
     >
-      <div className="md:px-6">
+      <div className="md:px-6 max-sm:px-6">
         <div className="flex justify-between items-center">
           <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center space-x-2">
             <GraduationCap size={32} />
@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col space-y-4 bg-white">
+          <div className="md:hidden max-sm:text-black px-6 rounded-md py-5 mt-4 pb-4 flex flex-col space-y-4 bg-white">
             <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-700 transition-colors font-medium">
               Home
             </Link>

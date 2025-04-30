@@ -61,7 +61,7 @@ export default function CourseDetailPage({ params }) {
     <div className="pt-20">
       {/* Course Header */}
       <div className="bg-gradient-to-r from-gray-200 to-gray-400 text-white py-16">
-        <div className="mx-auto px-10">
+        <div className="mx-auto max-sm:px-6 px-10">
           <button
             onClick={() => router.push("/")}
             className="flex items-center bg-red-400 hover:bg-red-600 text-white py-3 px-6 rounded-lg mb-4 cursor-pointer"
@@ -70,7 +70,7 @@ export default function CourseDetailPage({ params }) {
             Back to Courses
           </button>
 
-          <div className="text-black rounded-2xl p-8 flex flex-col lg:flex-row items-center lg:items-start gap-10 ">
+          <div className="text-black rounded-2xl p-8 max-sm:px-4 flex flex-col lg:flex-row items-center lg:items-start gap-10 ">
             {/* Left Side */}
             <div className="lg:w-2/3">
               <h1 className="text-4xl font-bold mb-4">{course.title}</h1>
@@ -125,7 +125,7 @@ export default function CourseDetailPage({ params }) {
       </div>
 
       {/* Course Content */}
-      <div className="mx-auto px-10 py-12">
+      <div className="mx-auto max-sm:px-6 px-10 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2">
             {/* Tabs */}

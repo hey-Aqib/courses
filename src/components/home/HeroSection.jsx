@@ -6,10 +6,10 @@ const HeroSection = () => {
       {/* Abstract shapes for background */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div className="absolute top-10 left-10 w-72 h-72 bg-gray-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 max-sm:hidden"></div>
       </div>
       
-      <div className="mx-auto px-15 relative z-10">
+      <div className="mx-auto px-15 max-sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -45,7 +45,7 @@ const HeroSection = () => {
               />
               
               {/* Stats overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+              <div className="absolute bottom-0 left-0 right-00 bg-gradient-to-t from-black/80 to-transparent p-6">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
                     <p className="text-3xl font-bold text-amber-400">25K+</p>
@@ -97,7 +97,7 @@ const HeroSection = () => {
         {/* Trusted by */}
         <div className="mt-20 text-center">
           <p className="text-gray-200 mb-6">Trusted by leading companies worldwide</p>
-          <div className="flex flex-wrap justify-center gap-8 opacity-80">
+          <div className="flex flex-wrap justify-center gap-4 opacity-100">
             {['Microsoft', 'Google', 'Amazon', 'IBM', 'Oracle'].map((company, index) => (
               <div key={index} className="text-white font-bold text-xl">
                 {company}
