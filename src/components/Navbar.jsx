@@ -28,7 +28,7 @@ const Navbar = () => {
           : `bg-transparent py-4 ${isCourseRoute ? 'text-gray-700' : 'text-white'}`
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="md:px-6">
         <div className="flex justify-between items-center">
           <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center space-x-2">
             <GraduationCap size={32} />

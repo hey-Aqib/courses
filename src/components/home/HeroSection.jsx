@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="mx-auto px-15 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
