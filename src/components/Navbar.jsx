@@ -3,13 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, GraduationCap } from 'lucide-react';
-import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
-  const isCourseRoute = pathname?.includes('/course/');
   
 
   useEffect(() => {
@@ -25,7 +22,7 @@ const Navbar = () => {
       className={`fixed  w-full z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white shadow-md py-2 text-gray-700'
-          : `bg-transparent py-4 ${isCourseRoute ? 'text-gray-700' : 'text-white'}`
+          : `bg-transparent py-4 text-white`
       }`}
     >
       <div className="md:px-6 max-sm:px-6">

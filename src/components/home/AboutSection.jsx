@@ -3,47 +3,47 @@ import { CheckCircle2, Trophy, Users, BookOpen } from 'lucide-react';
 const AboutSection = () => {
   const features = [
     {
-      icon: <BookOpen size={36} className="text-gray-700" />,
+      icon: <BookOpen size={36} className="text-amber-400" />,
       title: "Expert-Led Instruction",
       description: "Learn from industry professionals with real-world experience in their fields."
     },
     {
-      icon: <Trophy size={36} className="text-gray-700" />,
+      icon: <Trophy size={36} className="text-amber-400" />,
       title: "Industry-Recognized Certificates",
       description: "Earn credentials that are respected and recognized by employers worldwide."
     },
     {
-      icon: <Users size={36} className="text-gray-700" />,
+      icon: <Users size={36} className="text-amber-400" />,
       title: "Collaborative Learning",
       description: "Connect with peers, build your network, and learn through group projects."
     },
     {
-      icon: <CheckCircle2 size={36} className="text-gray-700" />,
+      icon: <CheckCircle2 size={36} className="text-amber-400" />,
       title: "Job-Ready Skills",
       description: "Develop practical, hands-on skills that prepare you for immediate employment."
     }
   ];
 
   return (
-    <section id="about-us" className="py-20 bg-white">
+    <section id="about-us" className="py-20 bg-black">
       <div className="mx-auto max-sm:px-6 px-15">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About SkillMaster</h2>
-            <p className="text-gray-600 mb-6 text-lg">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About SkillMaster</h2>
+            <p className="text-gray-300 mb-6 text-lg">
               At SkillMaster, we're dedicated to transforming careers through high-quality, industry-relevant education. Our mission is to make professional skills accessible to everyone, everywhere.
             </p>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-300 mb-8">
               Founded in 2018, we've helped over 25,000 students master in-demand skills and secure positions at leading companies. Our expert instructors bring real-world experience to every course, ensuring you learn practical skills that employers value.
             </p>
             
             <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Why Choose SkillMaster?</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Why Choose SkillMaster?</h3>
               <ul className="space-y-3">
                 {["Industry-relevant curriculum", "Hands-on, project-based learning", "Personalized mentorship", "Career support services", "Flexible learning options"].map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle2 size={20} className="text-green-600 mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <CheckCircle2 size={20} className="text-amber-400 mt-1 mr-3 flex-shrink-0" />
+                    <span className="text-gray-300">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -51,7 +51,7 @@ const AboutSection = () => {
             
             <a 
               href="#courses" 
-              className="inline-block bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-black px-8 py-3 rounded-lg transition-colors font-medium"
             >
               View Our Courses
             </a>
@@ -82,7 +82,7 @@ const AboutSection = () => {
             </div>
             
             {/* Stats overlay */}
-            <div className="absolute -bottom-10 -right-10 bg-gray-900 text-white p-6 rounded-xl shadow-xl hidden md:block">
+            <div className="absolute -bottom-10 -right-10 bg-gray-800 text-white p-6 rounded-xl shadow-xl hidden md:block">
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-amber-400">100+</p>
@@ -108,18 +108,18 @@ const AboutSection = () => {
         {/* Features */}
         <div className="mt-24">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Approach to Learning</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-4">Our Approach to Learning</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
               We believe in a comprehensive approach that combines expert instruction, hands-on practice, and career support.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-xl transition-transform duration-300 hover:-translate-y-2">
+              <div key={index} className="bg-gray-800 p-6 rounded-xl transition-transform duration-300 hover:-translate-y-2">
                 <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
               </div>
             ))}
           </div>
